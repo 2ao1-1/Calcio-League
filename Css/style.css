@@ -1,0 +1,200 @@
+/* fonts */
+@font-face {
+  font-family: soria;
+  src: url(../Fonts/soria/soria-font.ttf);
+}
+@font-face {
+  font-family: "calcio";
+  src: url(../Fonts/calcio-demo-400.ttf);
+}
+
+/* common style */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-weight: 600;
+  background: #f1f1f1;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  padding: 0 15px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  margin: 0;
+}
+
+header {
+  z-index: 1000;
+}
+h2 {
+  font-family: calcio;
+  color: #fff;
+}
+h3 {
+  font-family: soria;
+  font-size: 5rem;
+}
+
+/* logo */
+.navbar {
+  height: 40px;
+  width: 25%;
+}
+.logo img {
+  width: 3rem;
+}
+
+/* menu button */
+.navbar-toggler {
+  background: 0;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* pages links */
+.nav-link {
+  color: #fff;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-link:focus,
+.nav-link:hover {
+  color: #0196ff;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* main land */
+main {
+  top: -10rem;
+}
+
+/* home page */
+
+/* carousel */
+
+.caro-me {
+  height: 700px;
+}
+
+.caro-item img {
+  height: 700px;
+  filter: brightness(0.5);
+}
+.car-content {
+  width: 80%;
+  height: 300px;
+  top: 180px;
+  color: #fff;
+}
+h3:before {
+  content: "SERIA A";
+  position: absolute;
+  font-size: 0.8rem;
+  font-family: var(--bs-body-font-family);
+  letter-spacing: 2px;
+  background: #005bff;
+  color: #ffffff;
+  padding: 4px 30px;
+  top: -50px;
+  clip-path: polygon(15% 0, 0% 100%, 85% 100%, 100% 0%);
+}
+
+/* right & left arrow */
+.caro-me button,
+.maches-day button {
+  background: #3333334a;
+  color: #fff;
+  border: none;
+  position: absolute;
+  top: 50%;
+  margin: 35px;
+  height: 60px;
+  width: 20px;
+  box-shadow: 0 0 20px 0 #00000047;
+  z-index: 100;
+}
+.arrow-left {
+  left: 1%;
+}
+.arrow-right {
+  right: 1%;
+}
+
+/* matches */
+
+.match-card {
+  width: 200px;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: 75px;
+  transition: position 1s ease-in-out;
+  overflow: hidden;
+  box-shadow: 4px 4px 0px 0px #0196ff;
+}
+.match-card:hover {
+  top: -10px;
+  transition: top 1s cubic-bezier(0.35, 1.16, 0.51, -0.12);
+  box-shadow: 4px 4px 0px 0px #0196ff;
+}
+.team-img {
+  width: 30px;
+}
+.team.t-1,
+.team.t-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+span.stadium {
+  font-size: 12px;
+}
+span.date {
+  font-size: 10px;
+}
+button.match-detail {
+  width: 100%;
+  border: 0;
+  background: aqua;
+  margin-top: 5px;
+}
+
+/* matches arrow */
+.match-arrow {
+  background: #00000047;
+  border: 0;
+  position: absolute;
+  width: 25px;
+  height: 95px;
+  color: #fff;
+  top: 80px;
+}
+.arr-left {
+  left: 80px;
+}
+.arr-right {
+  right: 80px;
+}
